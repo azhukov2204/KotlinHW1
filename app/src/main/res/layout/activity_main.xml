@@ -10,15 +10,9 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="@string/textViewText" />
+        android:text="@string/textViewText"
+        android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button1Text"/>
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
@@ -28,46 +22,93 @@
         android:hint="@string/editTextHint"
         android:inputType="text" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/button1Text" />
+
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/readVal1Button"
-            android:layout_width="0dp"
-            android:text="@string/readVal1ButtonText"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            tools:ignore="ButtonStyle" />
-        <Button
-            android:id="@+id/showVal1Button"
-            android:layout_width="0dp"
-            android:text="@string/showVal1ButtonText"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            tools:ignore="ButtonStyle" />
-    </LinearLayout>
 
-    <LinearLayout
+        <TableRow>
+
+            <Button
+                android:id="@+id/readVal1Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/readVal1ButtonText"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/readVal2Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/readVal2ButtonText"
+                tools:ignore="ButtonStyle" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/showVal1Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/showVal1ButtonText"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/showVal2Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/showVal2ButtonText"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/copyDataToObject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/copyDataToObjectText"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/showVal1FromObjectButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/showVal1FromObjectButtonText"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/showVal2FromObjectButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/showVal2FromObjectButtonText"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/printValuesFromLoops"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/readVal2Button"
-            android:layout_width="0dp"
-            android:text="@string/readVal2ButtonText"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            tools:ignore="ButtonStyle" />
-        <Button
-            android:id="@+id/showVal2Button"
-            android:layout_width="0dp"
-            android:text="@string/showVal2ButtonText"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            tools:ignore="ButtonStyle" />
-    </LinearLayout>
-
-
+        android:text="@string/printValuesFromLoops"
+        tools:ignore="ButtonStyle" />
 
 </LinearLayout>

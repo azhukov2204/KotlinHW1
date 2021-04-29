@@ -46,5 +46,21 @@ class MainActivity : AppCompatActivity() {
             textView.text = dataClassTest.str2
         }
 
+        //создайте Object, в Object вызывайте copy и выводите значения скопированного класса на экран;
+        findViewById<Button>(R.id.copyDataToObject).setOnClickListener {
+            ObjectText.copyFromDataClassTest(dataClassTest)
+        }
+
+        findViewById<Button>(R.id.showVal1FromObjectButton).setOnClickListener {
+            textView.text = ObjectText.getStr1()
+        }
+
+        findViewById<Button>(R.id.showVal2FromObjectButton).setOnClickListener {
+            textView.text = ObjectText.getStr2()
+        }
+
+        //выводите значения из разных циклов в консоль, используя примеры из методических материалов
+
+
     }
 }

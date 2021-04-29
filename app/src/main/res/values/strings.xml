@@ -2,11 +2,15 @@
     <string name="app_name">KotlinHW1</string>
     <string name="textViewText">Hello World!</string>
     <string name="textViewNewText">NewText</string>
-    <string name="button1Text">Button1</string>
+    <string name="button1Text">show a text</string>
     <string name="editTextHint">enter text</string>
-    <string name="readVal1ButtonText">read val1</string>
+    <string name="readVal1ButtonText">save val1</string>
+    <string name="readVal2ButtonText">save val2</string>
     <string name="showVal1ButtonText">show val1</string>
-    <string name="readVal2ButtonText">read val2</string>
     <string name="showVal2ButtonText">show val2</string>
+    <string name="copyDataToObjectText">copy data to object</string>
+    <string name="showVal1FromObjectButtonText">show val1 from object</string>
+    <string name="showVal2FromObjectButtonText">show val2 from object</string>
+    <string name="printValuesFromLoops">print values from loops</string>
 
 </resources>
