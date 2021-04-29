@@ -4,10 +4,10 @@
     <string name="textViewNewText">NewText</string>
     <string name="button1Text">show a text</string>
     <string name="editTextHint">enter text</string>
-    <string name="readVal1ButtonText">save val1</string>
-    <string name="readVal2ButtonText">save val2</string>
-    <string name="showVal1ButtonText">show val1</string>
-    <string name="showVal2ButtonText">show val2</string>
+    <string name="readVal1ButtonText">save val1 to dataClass</string>
+    <string name="readVal2ButtonText">save val2 to dataClass</string>
+    <string name="showVal1ButtonText">show val1 from dataClass</string>
+    <string name="showVal2ButtonText">show val2 from dataClass</string>
     <string name="copyDataToObjectText">copy data to object</string>
     <string name="showVal1FromObjectButtonText">show val1 from object</string>
     <string name="showVal2FromObjectButtonText">show val2 from object</string>

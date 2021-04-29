@@ -60,7 +60,20 @@ class MainActivity : AppCompatActivity() {
         }
 
         //выводите значения из разных циклов в консоль, используя примеры из методических материалов
+        findViewById<Button>(R.id.printValuesFromLoops).setOnClickListener(printLoopsResults)
 
+    }
+
+    private val printLoopsResults: View.OnClickListener = View.OnClickListener {
+        println("Loop on list: ")
+        val strList: List<String> = listOf("str1", "Str2", "str3")
+        for (str in strList) println(str)
+
+        println("Digits in a loop : ")
+        for(i in 1..10) println("digit: " + i)
+
+        println("Outputting digits in a loop in reverse order, step = 2: ")
+        for(i in 10 downTo 1 step 2) println("digit: " + i)
 
     }
 }
