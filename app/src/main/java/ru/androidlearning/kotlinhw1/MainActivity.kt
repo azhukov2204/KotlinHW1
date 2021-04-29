@@ -4,22 +4,46 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import ru.androidlearning.kotlinhw1.R
 import ru.androidlearning.kotlinhw1.R.string.textViewNewText
 
 class MainActivity : AppCompatActivity() {
 
+    private var dataClassTest: DataClassTest = DataClassTest()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Добавить кнопку в разметку и повесить на неё clickListener в Activity.
+        //-------------------------------------------------------------------------
+        //Добавить кнопку в разметку и повесить на неё clickListener в Activity:
         val textView = findViewById<TextView>(R.id.textView)
-        val button1 = findViewById<Button>(R.id.button1)
-        button1.setOnClickListener {
+        val editText = findViewById<EditText>(R.id.editText)
+
+        findViewById<Button>(R.id.button1).setOnClickListener {
             textView.text = resources.getString(textViewNewText)
+        }
+
+        //-------------------------------------------------------------------------
+        //Создайте data class с двумя свойствами, выведите их на экран приложения:
+        //(data class объявлен в качестве свойства этого активити)
+        findViewById<Button>(R.id.readVal1Button).setOnClickListener {
+            dataClassTest.str1 = editText.text.toString()
+        }
+
+        findViewById<Button>(R.id.showVal1Button).setOnClickListener {
+            textView.text = dataClassTest.str1
+        }
+
+        findViewById<Button>(R.id.readVal2Button).setOnClickListener {
+            dataClassTest.str2 = editText.text.toString()
+        }
+
+        findViewById<Button>(R.id.showVal2Button).setOnClickListener {
+            textView.text = dataClassTest.str2
         }
 
     }

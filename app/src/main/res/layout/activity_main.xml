@@ -19,5 +19,55 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button1Text"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:hint="@string/editTextHint"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/readVal1Button"
+            android:layout_width="0dp"
+            android:text="@string/readVal1ButtonText"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/showVal1Button"
+            android:layout_width="0dp"
+            android:text="@string/showVal1ButtonText"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/readVal2Button"
+            android:layout_width="0dp"
+            android:text="@string/readVal2ButtonText"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/showVal2Button"
+            android:layout_width="0dp"
+            android:text="@string/showVal2ButtonText"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+
 
 </LinearLayout>
