@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KotlinHW1</string>
+    <string name="textViewText">Hello World!</string>
+    <string name="textViewNewText">NewText</string>
+    <string name="button1Text">Button1</string>
+
 </resources>
